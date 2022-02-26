@@ -8,7 +8,9 @@ Created on Tue Feb 22 11:14:55 2022
 
 from flask import Flask
 app = Flask(__name__)
+from flask import request, render_template 
 import joblib
+
 
 @app.route("/", methods = ["GET","POST"])
 def index():
